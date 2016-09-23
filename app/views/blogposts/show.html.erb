@@ -1,0 +1,64 @@
+    <header class="intro-header post-header" style="background: no-repeat center center; background-size: cover; background-image: url('<%= @blogpost.content_url %>')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1><%= @blogpost.heading %></h1>
+                        <h2 class="subheading"><%= @blogpost.subheading %></h2>
+                        <span class="meta">Posted by <a href="#"><%= @blogpost.participants %></a> on <%= @blogpost.created_at %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <%= @blogpost.content.html_safe %>
+
+                <%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |
+                <%= link_to 'Back', static_pages_index_path %>
+
+                </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<!--
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heading:</strong>
+  <%= @blogpost.heading %>
+</p>
+
+<p>
+  <strong>Subheading:</strong>
+  <%= @blogpost.subheading %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+
+</p>
+
+  <%= @blogpost.content.html_safe %>
+
+<p>
+  <strong>Content url:</strong>
+  <%= @blogpost.content_url %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @blogpost.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |
+<%= link_to 'Back', blogposts_path %>
+-->

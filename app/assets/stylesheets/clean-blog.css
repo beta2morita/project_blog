@@ -39,6 +39,16 @@ blockquote {
   color: #777777;
   font-style: italic;
 }
+
+textarea, input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 500px;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -138,7 +148,6 @@ hr.small {
   }
 }
 .intro-header {
-
   background-color: #777777;
   background: no-repeat center center;
   background-attachment: scroll;
@@ -147,8 +156,12 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
-    background: url('home-bg.jpg');
 }
+
+.post-header {
+    background: url('post-bg.jpg');
+}
+
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {

@@ -1,0 +1,25 @@
+<header class="intro-header" style="background-image: url('/assets/photo-pinwand.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Editing blogpost</h1>
+                                            <hr class="small">
+                    <span class="subheading">Edit your existing blogpost. Don't forget to save!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+<%= render 'form', blogpost: @blogpost %>
+
+<%= link_to 'Back', blogposts_path %>
+
+		</div>
+	</div>
+</div>
